@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="text-transform: uppercase;">
+    <div id="myDIV" class="header">
+      <h2>My To Do List</h2>
+      <input type="text" id="title" placeholder="Title..." />
+      <br />
+      <input type="text" id="desc" placeholder="Description..." />
+      <br /><br />
+      <button onclick="newElement()" class="addBtn">Add</button>
+      <!-- <button onclick="res()" class="addBtn">Submit</button> -->
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 2%;">
+      <div
+        id="list"
+        style="
+          border: 1px solid black;
+          width: 33.33%;
+          margin-right: 20px;
+          background: burlywood;
+          padding: 10px;
+        "
+      >
+        <h1 style="text-align: center;">list</h1>
+      </div>
+      <div
+        style="
+          border: 1px solid black;
+          width: 32.33%;
+          margin-right: 20px;
+          background: chartreuse;
+          padding: 10px;
+        "
+        id="in-progress"
+      >
+        <h1 style="text-align: center;">in-progress</h1>
+      </div>
+      <div
+        style="
+          border: 1px solid black;
+          width: 33.33%;
+          margin-right: 20px;
+          background: yellow;
+          padding: 10px;
+        "
+        id="finish-list"
+      >
+        <h1 style="text-align: center;">finish</h1>
+      </div>
+    </div>
+
+    <script src="todolist.js" />
+  </body>
+</html>
